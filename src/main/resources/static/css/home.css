@@ -1,0 +1,317 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav
+{
+    height: 70px;
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo
+{
+    width: 30%;
+    margin-left:50px;
+}
+.header_content
+{
+    width: 100%;
+
+}
+nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .logo a
+{
+    text-decoration:none;
+    
+}
+nav .logo a h2
+{
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 17px;
+    color: white;
+}
+
+nav .header_content
+{
+    padding-left: 600px;
+}
+nav .header_content ul
+{
+    display: flex;
+    margin-top: 20px;
+   	margin-left:200px;
+}
+
+nav ul li
+{
+    list-style: none;
+    padding-left: 40px;
+    font-size:22px;
+}
+
+nav ul li a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+.loginbtn
+{
+    margin-left: 30px;
+    margin-top: -10px;
+    background-color: #42cc27;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Login_content
+{
+    display: none;
+    background-color: #f1f1f1;
+    width: 140px;
+}
+.Login_content a{
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.Login_content a:hover
+{
+    background-color: #ddd; 
+}
+
+.login:hover .Login_content 
+{
+    display: block;
+}
+
+.login:hover .loginbtn
+ {
+     background-color: #3e8e41;
+}
+
+.main
+{
+    height: 300px;
+    width: 100%;
+    margin-top: -130px;
+    background-color: rgba(0, 255, 255, 0.267);
+}
+
+.main h1
+{
+    margin: 130px 0 0 150px;
+    padding: 150px 0 0 0;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main p
+{
+    margin: 20px 0 0 170px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hotel_details
+{
+    background-color: rgba(231, 131, 131, 0.301);
+    height: 400px;
+    width: 100%;
+}
+
+.hotel_details h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+.hotel_details img
+{
+    width: 400px;
+    height: 300px;
+    margin-top: 40px;
+   	margin-left:200px;
+    border-radius: 5%;
+    border-bottom: 2px solid red;
+}
+
+.about_us1 
+{
+    background-color: rgb(228, 255, 196);
+}
+
+
+.about_us1  h1{
+    padding: 100px 0 0 0;
+}
+.about_us
+{
+    height: 70vh;
+    width: 70%;
+    display: flex;
+    margin-left: 200px;
+
+}
+.about_us .one
+{
+    width: 50%;
+}
+.about_us .one img
+{
+    margin: 60px 0 0 50px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+.about_us .two
+{
+    width: 40%;
+    margin-top: 100px;
+}
+.gallery
+{
+    width: 100%;
+    background-color: rgba(255, 189, 127, 0.397);
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+.gallery h1{
+    padding: 100px 0 0 0;
+    margin-top: 40px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    
+}
+
+.gallery .image img{
+    width: 500px;
+    height: 350px;
+    padding: 5px;
+    margin:40px 0 0 100px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px grey;
+}
+
+.contact
+{
+    height: 500px;
+    width: 600px;
+    background-color: rgb(121, 199, 199,0.3);
+    display: block;
+    justify-content: center;
+    margin: 100px 0 0 650px;
+    border-radius: 5px;
+}
+.contact h1
+{
+    padding: 50px;
+}
+
+.contact .con
+{
+    width: 400px;
+    height: 400px;
+}
+
+input
+{
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.message
+{
+    height: 100px;
+}
+button
+{
+    padding: 10px;
+    
+}
+
+.down
+{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.down .rights p
+{
+    color: white;
+    padding-top: 35px;
+    font-size: 19px;
+    margin-left: 120px;
+}
+
+
+/* .up
+{
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(202, 222, 240);
+    display: flex;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.one
+{
+    padding-left: 150px;
+    margin-left: 110px;
+}
+
+.one h1{
+    font: bold;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.one ul
+{
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.one ul li{
+    padding-top: 10px;
+}
+
+.one ul li a
+{
+    
+    text-decoration: none;
+    font-size:18px
+}
+
+.one ul li a:hover
+{
+    color: brown;
+} */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel_Management_java_project</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <div class="home" id="home">
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <h2>Hotel Booking System</h2>
+                </a>
+            </div>s
+            <div class="header_content">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <div class="login">
+                        <button class="loginbtn" id="loginbtn">Login</button>
+                         <div class="Login_content">
+                            <a th:href="@{/adminLogin}">Admin Login</a>
+                            <a th:href="@{/employeelogin}">Employee Login</a>
+                            <a th:href="@{/userlogin}">User Login</a>
+                        </div>
+                    </div>
+                    <div class="login">
+                        <button class="loginbtn" id="loginbtn">SignUp</button>
+                         <div class="Login_content">
+                            <a th:href="@{/adminLogin}">Admin SignUp</a>
+                            <a th:href="@{/employeelogin}">Employee <br> SignUp</a>
+                            <a th:href="@{/signup}">User SignUp</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <h1>Find your next stay</h1>
+            <p>Search deal on hotels and many more</p>
+        </div>
+        <div class="hotel_details">
+            <center>
+                <h1>We Here To Serve You...</h1>
+            </center>
+            <img src="/image/g9.jpg" alt="Image">
+            <img src="/image/g2.jpg" alt="Image">
+            <img src="/image/g8.jpg" alt="Image">
+        </div>
+    </div>
+
+    <div class="about_us1" id="about-us">
+        <center>
+            <h1>About Us</h1>
+        </center>
+        <div class="about_us">
+            <div class="one">
+                <img src="/image/about us.jpg" alt="the image">
+            </div>
+            <div class="two">
+                <p>Hotel JAB is a chain of luxury hotels and a subsidiary of the Indian Hotels Company Limited,
+                    headquartered at Express Towers, Nariman Point, Mumbai. Incorporated by the founder of the Tata
+                    Group, Jamsetji Tata, in 1903, the company is a part of the Tata Group, one of India's largest
+                    business conglomerates.Hotel Bab is a chain of luxury hotels and a subsidiary of the Indian Hotels
+                    Company Limited, headquartered at Express Towers, Nariman Point, Mumbai. Incorporated by the founder
+                    of the Tata Group, Jamsetji Tata, in 1903, the company is a part of the Tata Group, one of India's
+                    largest business conglomerates</p>
+            </div>
+        </div>
+    </div>
+        <div class="gallery" id="gallery">
+        <center>
+            <h1>Gallery</h1>
+        </center>
+        <div class="image">
+            <img src="/image/g1.jpg" alt="">
+            <img src="/image/g2.jpg" alt="">
+            <img src="/image/g3.jpg" alt="">
+            <img src="/image/g4.jpg" alt="">
+            <img src="/image/g5.jpg" alt="">
+            <img src="/image/g6.jpg" alt="">
+            <img src="/image/g7.jpg" alt="">
+            <img src="/image/g8.jpg" alt="">
+            <img src="/image/g9.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="down">
+            <div class="rights">
+                <p>
+                    Hotel Booking and Recommendation System
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

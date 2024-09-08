@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/userlogin.css">
+</head>
+
+<body>
+    <center>
+        <h2>Login Form</h2>
+    </center>
+    <center>
+        <form th:action="@{/hotelbooking}">
+
+            <div class="container">
+                <label for="name"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="name" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <button type="submit">Login</button>
+            </div>
+            <p>Dont Have Acoount <br> <Span><a th:href="@{/signup}">SignUp</a></Span> Here</p>
+        </form>
+    </center>
+</body>
+</html>
+</html>

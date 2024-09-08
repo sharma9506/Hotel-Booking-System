@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track_Employee</title>
+    <link rel="stylesheet" href="/css/guestdetails.css">
+    
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Existing Employee Details Section -->
+        <div>
+            <div class="heading">
+                <center><a th:href="@{/new}">Add New Employee</a></center>
+                <h2 style="position: relative; top: 0px; left: 300px;">Employee Details</h2>
+               
+            </div>
+            <div class="tables">
+                <center><table border="1" cellspacing="0" cellpadding="10px"></center>
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Employee Name</th>
+                            <th>Employee Contact</th>
+                            <th>Employee Address</th>
+                            <th>Employee Email</th>
+                            <th>Employee DOB</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="employeeDetails: ${listEmployee}">
+                            <td th:text="${employeeDetails.id}"></td>
+                            <td th:text="${employeeDetails.name}"></td>
+                            <td th:text="${employeeDetails.contact}"></td>
+                            <td th:text="${employeeDetails.address}"></td>
+                            <td th:text="${employeeDetails.email}"></td>
+                            <td th:text="${employeeDetails.dob}"></td>
+                            <td>
+                                <a th:href="@{'/edit/' + ${employeeDetails.id}}">Edit</a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a th:href="@{'/delete/' + ${employeeDetails.id}}">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+</body>
+</html>

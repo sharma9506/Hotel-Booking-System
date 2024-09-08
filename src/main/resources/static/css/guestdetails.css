@@ -1,0 +1,97 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    background-color: rgba(191, 235, 235, 0.678);
+    
+}
+.heading {
+    height: 50px; /* Adjust based on content */
+    width: 200px;
+    border: 2px solid black; /* Border around the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    margin-bottom: 20px; /* Space below the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Center text */
+}
+
+ .heading h1
+{
+    padding-left: 560px;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+a{
+    color: red;
+}
+
+.down
+{
+    display: flex;
+    width: 100%;
+}
+
+.down .btns
+{
+    width: 20%;
+    /* background-color: aqua; */
+    height: 79vh;
+    border-right: 2px solid black;
+}
+
+.down .btns a
+{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 300px;
+    text-decoration: underline;
+}
+
+.down .btns a h1
+{
+    padding-top: 150px;
+}
+.bookD
+{
+    
+}
+.usersD , p
+{
+    
+}
+.down .tables
+{
+    width: 75%;
+}
+
+.down .tables p
+{
+    font-size: 22px;
+    font-weight: bolder;
+    color: crimson;
+}
+
+input
+{
+    background: transparent;
+    height: 25px;
+    color: blue;
+    border: none;
+    text-align: center;
+}
+
+
+
+table, th, td {
+    border:1px solid black;
+    padding: 10px;
+}
+
+

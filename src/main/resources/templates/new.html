@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Add Employee</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Add new Employee</h1>
+        <br />
+        <form th:action="@{/ssave}" th:object="${listEmployee}" method="post">
+        
+            <table border="0" cellpadding="10">             
+                <tr>             
+                    <td>Name:</td>
+                    <td>
+                        <input type="text" name="name" required/>
+                        <!-- // th:field="*{name}" -->		
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email" required/></td>
+                    <!-- th:field="*{email}" -->
+                </tr>
+                <tr>
+                    <td>Contact:</td>
+                    <td><input type="text"  name="contact" required/></td>
+                    <!-- th:field="*{contact}" -->
+                </tr>   
+                <tr>
+                    <td>Qualifications:</td>
+                    <td><input type="text"  name="qualifications" required/></td>
+                    <!-- th:field="*{qualifications}" -->
+                </tr>  
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text"  name="address" required/></td>
+                    <!-- th:field="*{address}" -->
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><input type="text"  name="state" required/></td>
+                    <!-- th:field="*{state}" -->
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" name="city" required /></td>
+                    <!-- th:field="*{city}" -->
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type="text" name="dob" required/></td>
+                    <!-- th:field="*{dob}" -->
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Save</button> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

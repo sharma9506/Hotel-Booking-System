@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel-Booking-Form</title>
+    <link rel="stylesheet" href="/css/HBF.css">
+</head>
+
+<body>
+    <div class="home" id="home">
+        <nav>
+            <div class="logo">
+                <a th:href="@{/}">
+                    <h2>Hotel JAB</h2>
+                </a>
+            </div>
+            <div class="header_content">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#gallery">Galary</a></li>
+                    <div class="login">
+                        <button class="loginbtn">Login</button>
+                         <div class="Login_content">
+                            <a th:href="@{/adminLogin}">Admin Login</a>
+                            <a th:href="@{/employeelogin}">Employee Login</a>
+                            <a th:href="@{/userlogin}">User Login</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="hotel_book_form">
+        <div id="form">
+            <center>
+                <h1>Booking Form</h1>
+            </center>
+        </div>
+        <form th:action="@{/save}" class="form-booking" th:object="${bookform}" method="post">
+            <div id="first-group">
+                <div id="content">
+                    <input type="text" id="input" placeholder="First Name" th:field="*{firstname}" required>
+                </div><br>
+                <div id="content">
+                    <input type="number" id="input" placeholder="Contact Number" th:field="*{contact}" required>
+                </div><br>
+                <div id="content">
+                    <input type="email" id="input" placeholder="Email Id" th:field="*{email}" required>
+                </div><br>
+                <div id="content">
+                    <select id="input-group" th:field="*{roomtype}" required>
+                        <option value="Room Type">Room Type</option>
+                        <option value="">Standard Room(1-2 People)</option>
+                        <option value="Standard Room(1-2 People)">Family Room(1-4 People)</option>
+                        <option value="Mix Dorm Room(1-6 People)">Mix Dorm Room(1-6 People)</option>
+                        <option value="Female Dorm Room((1-6 People))">Female Dorm Room((1-6 People))</option>
+                        <option value="Male Dorm Room((1-6 People))">Male Dorm Room((1-6 People))</option>
+                    </select>
+                </div>
+               
+                <button type="submit" onclick="myFunction()">Submit</button>
+            </div>
+            <div id="second-group">
+                <div id="content">
+                    <input type="text" id="input" placeholder="Last Name" th:field="*{lastname}" required>
+                </div><br>
+                <div id="content">
+                    <input type="number" id="input" placeholder="Alternate Number" th:field="*{alternatenumber}" required>
+                </div><br>
+                <div id="content">
+                    <input type="number" id="input" placeholder="Number of guest" th:field="*{numberofguest}" required>
+                </div>
+                <div id="content">
+                    <input type="date" id="input" th:field="*{date}" required>
+                </div>
+            </div>
+        </form>
+    </div>
+        <script>
+        function myFunction() {
+          alert("Booking Successful....");
+        }
+        </script>
+</body>
+
+</html>

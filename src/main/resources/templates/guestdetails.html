@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track_Employee</title>
+    <link rel="stylesheet" href="/css/guestdetails.css">
+</head>
+
+<body>
+    <div class="heading">
+        <u>
+            <h1>
+                Guest Details
+            </h1>
+        </u>
+    </div>
+    <div class="down">
+        <div class="tables">
+            <br>
+            <br><br>
+            <center>
+                 <table border="1" cellspacing="0" cellpadding="10px" class="bookD">
+                    <p>Hotel Booking Details</p>
+
+                    <thead>
+                        <tr>
+                        	<th>ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email Id</th>
+                            <th>Contact</th>
+                            <th>Alternate Contact</th>
+                            <th>Number of Guest</th>
+                            <th>Room Type</th>
+                            
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="bookform: ${listguest}">
+                            <td th:text="${bookform.id}"></td>
+                            <td th:text="${bookform.firstname}"></td>
+                            <td th:text="${bookform.lastname}"></td>
+                            <td th:text="${bookform.email}"></td>
+                            <td th:text="${bookform.contact}"></td>
+                            <td th:text="${bookform.alternatenumber}"></td>
+                            <td th:text="${bookform.roomtype}"></td>
+                            <td th:text="${bookform.numberofguest}"></td>
+                           
+                            <td th:text="${bookform.date}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

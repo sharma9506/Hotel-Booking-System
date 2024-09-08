@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Registration</title>
+    <link rel="stylesheet" href="/css/UserRegistration.css">
+</head>
+<body>
+    <div class="main">
+        <div class="register_here">
+            <h2>Register here</h2>
+            <form th:action="@{/process_register}" id="register" th:object="${user}" method="post">
+                <label for="name"><b>Name:</b></label><br>
+                <input type="text" id="register" th:field="*{name}" placeholder="Enter Your Full name" autocomplete="off" required><br>
+                <label for="email"><b>Email:</b></label>
+                <input type="text" id="register" th:field="*{email}" placeholder="Enter Your Valid Email" autocomplete="off" required><br>
+                <label for="contact"><b>Contact:</b></label><br>
+                <input type="text" id="register" th:field="*{contact}" placeholder="Enter Your Contact number" autocomplete="off" required><br>
+                <label for="Idproof"><b>ID Proof:</b></label><br>
+                <input type="text" id="register" th:field="*{Idproof}" placeholder="AADAR CARD, PAN CARD..." autocomplete="off" required><br>
+                <label for="Idnumber"><b>ID NUMBER:</b></label><br>
+                <input type="text" id="register" th:field="*{Idnumber}" placeholder="Enter Your Contact number" autocomplete="off" required><br>
+                <label for="password"><b>Password:</b></label><br>
+                <input type="password" id="register" th:field="*{password}" placeholder="Enter Your Password" autocomplete="off" required>
+                <button type="submit">save</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
